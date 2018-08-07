@@ -27,4 +27,8 @@ class FishTest < MiniTest::Test
     assert_equal(1, @bear.food_count)
     assert_equal(2, @river.fish_count)
   end
+
+  def test_bear_can_roar
+    assert_equal('Roarrrrr!!!', @bear.roar)
+  end
 end
