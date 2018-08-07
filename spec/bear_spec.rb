@@ -21,4 +21,10 @@ class FishTest < MiniTest::Test
   def test_bear_has_empty_stomach
     assert_equal(0, @bear.food_count)
   end
+
+  def test_bear_can_catch_fish
+    @bear.catch_fish(@river, @river.fishes[0])
+    assert_equal(1, @bear.food_count)
+    assert_equal(2, @river.fish_count)
+  end
 end
