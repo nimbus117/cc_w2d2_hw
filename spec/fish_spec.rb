@@ -5,6 +5,6 @@ require_relative('../fish.rb')
 class FishTest < MiniTest::Test
   def test_fish_has_name
     fish = Fish.new('nemo')
-    assert_equals('nemo', fish.name)
+    assert_equal('nemo', fish.name)
   end
 end
