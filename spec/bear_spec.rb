@@ -11,7 +11,7 @@ class FishTest < MiniTest::Test
     fish3 = Fish.new('dory')
     fishes = [fish1, fish2, fish3]
     @river = River.new('Amazon', fishes)
-    @bear = Bear.new('Beorn')
+    @bear = Bear.new('Beorn', 'Grizzly')
   end
 
   def test_bear_has_name
