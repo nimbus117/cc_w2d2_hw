@@ -18,6 +18,10 @@ class FishTest < MiniTest::Test
     assert_equal('Beorn', @bear.name)
   end
 
+  def test_bear_has_type
+    assert_equal('Grizzly', @bear.type)
+  end
+
   def test_bear_has_empty_stomach
     assert_equal(0, @bear.food_count)
   end
